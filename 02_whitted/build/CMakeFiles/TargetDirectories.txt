@@ -1,0 +1,15 @@
+/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/rebuild_cache.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/edit_cache.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/clean.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/AntTweakBar_make.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/glfw/CMakeFiles/edit_cache.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/glfw/CMakeFiles/rebuild_cache.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/glfw/src/CMakeFiles/rebuild_cache.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/glfw/src/CMakeFiles/edit_cache.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/glfw/src/CMakeFiles/glfw.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/edit_cache.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/rebuild_cache.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/src/CMakeFiles/rebuild_cache.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/src/CMakeFiles/edit_cache.dir
+/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/src/CMakeFiles/cg.dir
