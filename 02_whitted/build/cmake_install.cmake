@@ -1,4 +1,4 @@
-# Install script for directory: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted
+# Install script for directory: /home/cg/cgue2/02_whitted
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/glfw/cmake_install.cmake")
-  include("/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/cmake_install.cmake")
-  include("/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/src/cmake_install.cmake")
+  include("/home/cg/cgue2/cglib/build/glfw/cmake_install.cmake")
+  include("/home/cg/cgue2/cglib/build/glew/cmake_install.cmake")
+  include("/home/cg/cgue2/cglib/build/cglib/cmake_install.cmake")
+  include("/home/cg/cgue2/02_whitted/build/src/cmake_install.cmake")
 
 endif()
 
@@ -48,5 +49,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/cg/cgue2/02_whitted/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

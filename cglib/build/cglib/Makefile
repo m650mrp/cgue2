@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted
+CMAKE_SOURCE_DIR = /home/cg/cgue2/02_whitted
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build
+CMAKE_BINARY_DIR = /home/cg/cgue2/02_whitted/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,16 +67,93 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	cd /home/cg/cgue2/02_whitted/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/cg/cgue2/02_whitted/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	cd /home/cg/cgue2/02_whitted/build && /usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+
+.PHONY : package/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"mx\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/progress.marks
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f CMakeFiles/Makefile2 /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles 0
+	cd /home/cg/cgue2/02_whitted/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cg/cgue2/02_whitted/build/CMakeFiles /home/cg/cgue2/cglib/build/cglib/CMakeFiles/progress.marks
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f CMakeFiles/Makefile2 /home/cg/cgue2/cglib/build/cglib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cg/cgue2/02_whitted/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f CMakeFiles/Makefile2 /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/clean
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f CMakeFiles/Makefile2 /home/cg/cgue2/cglib/build/cglib/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,32 +163,32 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f CMakeFiles/Makefile2 /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/preinstall
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f CMakeFiles/Makefile2 /home/cg/cgue2/cglib/build/cglib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f CMakeFiles/Makefile2 /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/preinstall
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f CMakeFiles/Makefile2 /home/cg/cgue2/cglib/build/cglib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cg/cgue2/02_whitted/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/rule:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f CMakeFiles/Makefile2 /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/rule
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/rule
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/rule:
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f CMakeFiles/Makefile2 /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/rule
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/rule
 
 # Convenience name for target.
-cglib_cg_2: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/rule
+cglib_cg_2: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/rule
 
 .PHONY : cglib_cg_2
 
 # fast build rule for target.
 cglib_cg_2/fast:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build
 .PHONY : cglib_cg_2/fast
 
 src/core/camera.o: src/core/camera.cpp.o
@@ -131,7 +197,7 @@ src/core/camera.o: src/core/camera.cpp.o
 
 # target to build an object file
 src/core/camera.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o
 .PHONY : src/core/camera.cpp.o
 
 src/core/camera.i: src/core/camera.cpp.i
@@ -140,7 +206,7 @@ src/core/camera.i: src/core/camera.cpp.i
 
 # target to preprocess a source file
 src/core/camera.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.i
 .PHONY : src/core/camera.cpp.i
 
 src/core/camera.s: src/core/camera.cpp.s
@@ -149,7 +215,7 @@ src/core/camera.s: src/core/camera.cpp.s
 
 # target to generate assembly for a file
 src/core/camera.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.s
 .PHONY : src/core/camera.cpp.s
 
 src/core/gui.o: src/core/gui.cpp.o
@@ -158,7 +224,7 @@ src/core/gui.o: src/core/gui.cpp.o
 
 # target to build an object file
 src/core/gui.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o
 .PHONY : src/core/gui.cpp.o
 
 src/core/gui.i: src/core/gui.cpp.i
@@ -167,7 +233,7 @@ src/core/gui.i: src/core/gui.cpp.i
 
 # target to preprocess a source file
 src/core/gui.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.i
 .PHONY : src/core/gui.cpp.i
 
 src/core/gui.s: src/core/gui.cpp.s
@@ -176,7 +242,7 @@ src/core/gui.s: src/core/gui.cpp.s
 
 # target to generate assembly for a file
 src/core/gui.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.s
 .PHONY : src/core/gui.cpp.s
 
 src/core/image.o: src/core/image.cpp.o
@@ -185,7 +251,7 @@ src/core/image.o: src/core/image.cpp.o
 
 # target to build an object file
 src/core/image.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o
 .PHONY : src/core/image.cpp.o
 
 src/core/image.i: src/core/image.cpp.i
@@ -194,7 +260,7 @@ src/core/image.i: src/core/image.cpp.i
 
 # target to preprocess a source file
 src/core/image.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.i
 .PHONY : src/core/image.cpp.i
 
 src/core/image.s: src/core/image.cpp.s
@@ -203,7 +269,7 @@ src/core/image.s: src/core/image.cpp.s
 
 # target to generate assembly for a file
 src/core/image.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.s
 .PHONY : src/core/image.cpp.s
 
 src/core/parameters.o: src/core/parameters.cpp.o
@@ -212,7 +278,7 @@ src/core/parameters.o: src/core/parameters.cpp.o
 
 # target to build an object file
 src/core/parameters.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o
 .PHONY : src/core/parameters.cpp.o
 
 src/core/parameters.i: src/core/parameters.cpp.i
@@ -221,7 +287,7 @@ src/core/parameters.i: src/core/parameters.cpp.i
 
 # target to preprocess a source file
 src/core/parameters.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.i
 .PHONY : src/core/parameters.cpp.i
 
 src/core/parameters.s: src/core/parameters.cpp.s
@@ -230,7 +296,7 @@ src/core/parameters.s: src/core/parameters.cpp.s
 
 # target to generate assembly for a file
 src/core/parameters.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.s
 .PHONY : src/core/parameters.cpp.s
 
 src/core/stb_image.o: src/core/stb_image.cpp.o
@@ -239,7 +305,7 @@ src/core/stb_image.o: src/core/stb_image.cpp.o
 
 # target to build an object file
 src/core/stb_image.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o
 .PHONY : src/core/stb_image.cpp.o
 
 src/core/stb_image.i: src/core/stb_image.cpp.i
@@ -248,7 +314,7 @@ src/core/stb_image.i: src/core/stb_image.cpp.i
 
 # target to preprocess a source file
 src/core/stb_image.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.i
 .PHONY : src/core/stb_image.cpp.i
 
 src/core/stb_image.s: src/core/stb_image.cpp.s
@@ -257,7 +323,7 @@ src/core/stb_image.s: src/core/stb_image.cpp.s
 
 # target to generate assembly for a file
 src/core/stb_image.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.s
 .PHONY : src/core/stb_image.cpp.s
 
 src/core/thread_pool.o: src/core/thread_pool.cpp.o
@@ -266,7 +332,7 @@ src/core/thread_pool.o: src/core/thread_pool.cpp.o
 
 # target to build an object file
 src/core/thread_pool.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o
 .PHONY : src/core/thread_pool.cpp.o
 
 src/core/thread_pool.i: src/core/thread_pool.cpp.i
@@ -275,7 +341,7 @@ src/core/thread_pool.i: src/core/thread_pool.cpp.i
 
 # target to preprocess a source file
 src/core/thread_pool.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.i
 .PHONY : src/core/thread_pool.cpp.i
 
 src/core/thread_pool.s: src/core/thread_pool.cpp.s
@@ -284,7 +350,7 @@ src/core/thread_pool.s: src/core/thread_pool.cpp.s
 
 # target to generate assembly for a file
 src/core/thread_pool.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.s
 .PHONY : src/core/thread_pool.cpp.s
 
 src/core/timer.o: src/core/timer.cpp.o
@@ -293,7 +359,7 @@ src/core/timer.o: src/core/timer.cpp.o
 
 # target to build an object file
 src/core/timer.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o
 .PHONY : src/core/timer.cpp.o
 
 src/core/timer.i: src/core/timer.cpp.i
@@ -302,7 +368,7 @@ src/core/timer.i: src/core/timer.cpp.i
 
 # target to preprocess a source file
 src/core/timer.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.i
 .PHONY : src/core/timer.cpp.i
 
 src/core/timer.s: src/core/timer.cpp.s
@@ -311,7 +377,7 @@ src/core/timer.s: src/core/timer.cpp.s
 
 # target to generate assembly for a file
 src/core/timer.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.s
 .PHONY : src/core/timer.cpp.s
 
 src/rt/host_render.o: src/rt/host_render.cpp.o
@@ -320,7 +386,7 @@ src/rt/host_render.o: src/rt/host_render.cpp.o
 
 # target to build an object file
 src/rt/host_render.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o
 .PHONY : src/rt/host_render.cpp.o
 
 src/rt/host_render.i: src/rt/host_render.cpp.i
@@ -329,7 +395,7 @@ src/rt/host_render.i: src/rt/host_render.cpp.i
 
 # target to preprocess a source file
 src/rt/host_render.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.i
 .PHONY : src/rt/host_render.cpp.i
 
 src/rt/host_render.s: src/rt/host_render.cpp.s
@@ -338,7 +404,7 @@ src/rt/host_render.s: src/rt/host_render.cpp.s
 
 # target to generate assembly for a file
 src/rt/host_render.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.s
 .PHONY : src/rt/host_render.cpp.s
 
 src/rt/material.o: src/rt/material.cpp.o
@@ -347,7 +413,7 @@ src/rt/material.o: src/rt/material.cpp.o
 
 # target to build an object file
 src/rt/material.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o
 .PHONY : src/rt/material.cpp.o
 
 src/rt/material.i: src/rt/material.cpp.i
@@ -356,7 +422,7 @@ src/rt/material.i: src/rt/material.cpp.i
 
 # target to preprocess a source file
 src/rt/material.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.i
 .PHONY : src/rt/material.cpp.i
 
 src/rt/material.s: src/rt/material.cpp.s
@@ -365,7 +431,7 @@ src/rt/material.s: src/rt/material.cpp.s
 
 # target to generate assembly for a file
 src/rt/material.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.s
 .PHONY : src/rt/material.cpp.s
 
 src/rt/object.o: src/rt/object.cpp.o
@@ -374,7 +440,7 @@ src/rt/object.o: src/rt/object.cpp.o
 
 # target to build an object file
 src/rt/object.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o
 .PHONY : src/rt/object.cpp.o
 
 src/rt/object.i: src/rt/object.cpp.i
@@ -383,7 +449,7 @@ src/rt/object.i: src/rt/object.cpp.i
 
 # target to preprocess a source file
 src/rt/object.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.i
 .PHONY : src/rt/object.cpp.i
 
 src/rt/object.s: src/rt/object.cpp.s
@@ -392,7 +458,7 @@ src/rt/object.s: src/rt/object.cpp.s
 
 # target to generate assembly for a file
 src/rt/object.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.s
 .PHONY : src/rt/object.cpp.s
 
 src/rt/raytracing_context.o: src/rt/raytracing_context.cpp.o
@@ -401,7 +467,7 @@ src/rt/raytracing_context.o: src/rt/raytracing_context.cpp.o
 
 # target to build an object file
 src/rt/raytracing_context.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o
 .PHONY : src/rt/raytracing_context.cpp.o
 
 src/rt/raytracing_context.i: src/rt/raytracing_context.cpp.i
@@ -410,7 +476,7 @@ src/rt/raytracing_context.i: src/rt/raytracing_context.cpp.i
 
 # target to preprocess a source file
 src/rt/raytracing_context.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.i
 .PHONY : src/rt/raytracing_context.cpp.i
 
 src/rt/raytracing_context.s: src/rt/raytracing_context.cpp.s
@@ -419,7 +485,7 @@ src/rt/raytracing_context.s: src/rt/raytracing_context.cpp.s
 
 # target to generate assembly for a file
 src/rt/raytracing_context.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.s
 .PHONY : src/rt/raytracing_context.cpp.s
 
 src/rt/raytracing_parameters.o: src/rt/raytracing_parameters.cpp.o
@@ -428,7 +494,7 @@ src/rt/raytracing_parameters.o: src/rt/raytracing_parameters.cpp.o
 
 # target to build an object file
 src/rt/raytracing_parameters.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o
 .PHONY : src/rt/raytracing_parameters.cpp.o
 
 src/rt/raytracing_parameters.i: src/rt/raytracing_parameters.cpp.i
@@ -437,7 +503,7 @@ src/rt/raytracing_parameters.i: src/rt/raytracing_parameters.cpp.i
 
 # target to preprocess a source file
 src/rt/raytracing_parameters.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.i
 .PHONY : src/rt/raytracing_parameters.cpp.i
 
 src/rt/raytracing_parameters.s: src/rt/raytracing_parameters.cpp.s
@@ -446,7 +512,7 @@ src/rt/raytracing_parameters.s: src/rt/raytracing_parameters.cpp.s
 
 # target to generate assembly for a file
 src/rt/raytracing_parameters.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.s
 .PHONY : src/rt/raytracing_parameters.cpp.s
 
 src/rt/renderer.o: src/rt/renderer.cpp.o
@@ -455,7 +521,7 @@ src/rt/renderer.o: src/rt/renderer.cpp.o
 
 # target to build an object file
 src/rt/renderer.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o
 .PHONY : src/rt/renderer.cpp.o
 
 src/rt/renderer.i: src/rt/renderer.cpp.i
@@ -464,7 +530,7 @@ src/rt/renderer.i: src/rt/renderer.cpp.i
 
 # target to preprocess a source file
 src/rt/renderer.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.i
 .PHONY : src/rt/renderer.cpp.i
 
 src/rt/renderer.s: src/rt/renderer.cpp.s
@@ -473,7 +539,7 @@ src/rt/renderer.s: src/rt/renderer.cpp.s
 
 # target to generate assembly for a file
 src/rt/renderer.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.s
 .PHONY : src/rt/renderer.cpp.s
 
 src/rt/scene.o: src/rt/scene.cpp.o
@@ -482,7 +548,7 @@ src/rt/scene.o: src/rt/scene.cpp.o
 
 # target to build an object file
 src/rt/scene.cpp.o:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o
 .PHONY : src/rt/scene.cpp.o
 
 src/rt/scene.i: src/rt/scene.cpp.i
@@ -491,7 +557,7 @@ src/rt/scene.i: src/rt/scene.cpp.i
 
 # target to preprocess a source file
 src/rt/scene.cpp.i:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.i
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.i
 .PHONY : src/rt/scene.cpp.i
 
 src/rt/scene.s: src/rt/scene.cpp.s
@@ -500,7 +566,7 @@ src/rt/scene.s: src/rt/scene.cpp.s
 
 # target to generate assembly for a file
 src/rt/scene.cpp.s:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.s
+	cd /home/cg/cgue2/02_whitted/build && $(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.s
 .PHONY : src/rt/scene.cpp.s
 
 # Help Target
@@ -509,9 +575,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... install/strip"
+	@echo "... package_source"
+	@echo "... package"
 	@echo "... cglib_cg_2"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... src/core/camera.o"
 	@echo "... src/core/camera.i"
 	@echo "... src/core/camera.s"
@@ -565,6 +637,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cg/cgue2/02_whitted/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

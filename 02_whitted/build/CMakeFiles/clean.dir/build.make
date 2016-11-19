@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted
+CMAKE_SOURCE_DIR = /home/cg/cgue2/02_whitted
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build
+CMAKE_BINARY_DIR = /home/cg/cgue2/02_whitted/build
 
 # Utility rule file for clean.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/buil
 include CMakeFiles/clean.dir/progress.make
 
 CMakeFiles/clean:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/lib/AntTweakBar/src && make clean
+	cd /home/cg/cgue2/cglib/lib/AntTweakBar/src && make clean
 
 clean: CMakeFiles/clean
 clean: CMakeFiles/clean.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean.dir/clean:
 .PHONY : CMakeFiles/clean.dir/clean
 
 CMakeFiles/clean.dir/depend:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/clean.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cg/cgue2/02_whitted/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cg/cgue2/02_whitted /home/cg/cgue2/02_whitted /home/cg/cgue2/02_whitted/build /home/cg/cgue2/02_whitted/build /home/cg/cgue2/02_whitted/build/CMakeFiles/clean.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/lib/glfw
+# Install script for directory: /home/cg/cgue2/cglib/lib/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/glfw/src/cmake_install.cmake")
+  include("/home/cg/cgue2/cglib/build/glfw/src/cmake_install.cmake")
 
 endif()
 

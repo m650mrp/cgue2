@@ -43,354 +43,354 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted
+CMAKE_SOURCE_DIR = /home/cg/cgue2/02_whitted
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build
+CMAKE_BINARY_DIR = /home/cg/cgue2/02_whitted/build
 
 # Include any dependencies generated for this target.
-include /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/depend.make
+include /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/depend.make
 
 # Include the progress variables for this target.
-include /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/progress.make
+include /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+include /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/camera.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o: /home/cg/cgue2/cglib/src/core/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o -c /home/cg/cgue2/cglib/src/core/camera.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/camera.cpp > CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/core/camera.cpp > CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/camera.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/core/camera.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/gui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/gui.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o: /home/cg/cgue2/cglib/src/core/gui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o -c /home/cg/cgue2/cglib/src/core/gui.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/gui.cpp > CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/core/gui.cpp > CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/gui.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/core/gui.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/image.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o: /home/cg/cgue2/cglib/src/core/image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o -c /home/cg/cgue2/cglib/src/core/image.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/image.cpp > CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/core/image.cpp > CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/image.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/core/image.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/parameters.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/parameters.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o: /home/cg/cgue2/cglib/src/core/parameters.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o -c /home/cg/cgue2/cglib/src/core/parameters.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/parameters.cpp > CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/core/parameters.cpp > CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/parameters.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/core/parameters.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/stb_image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/stb_image.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o: /home/cg/cgue2/cglib/src/core/stb_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o -c /home/cg/cgue2/cglib/src/core/stb_image.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/stb_image.cpp > CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/core/stb_image.cpp > CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/stb_image.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/core/stb_image.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/thread_pool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/thread_pool.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o: /home/cg/cgue2/cglib/src/core/thread_pool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o -c /home/cg/cgue2/cglib/src/core/thread_pool.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/thread_pool.cpp > CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/core/thread_pool.cpp > CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/thread_pool.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/core/thread_pool.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/timer.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o: /home/cg/cgue2/cglib/src/core/timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o -c /home/cg/cgue2/cglib/src/core/timer.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/timer.cpp > CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/core/timer.cpp > CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/core/timer.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/core/timer.cpp -o CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/host_render.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/host_render.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o: /home/cg/cgue2/cglib/src/rt/host_render.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o -c /home/cg/cgue2/cglib/src/rt/host_render.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/host_render.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/rt/host_render.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/host_render.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/rt/host_render.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/material.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/material.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o: /home/cg/cgue2/cglib/src/rt/material.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o -c /home/cg/cgue2/cglib/src/rt/material.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/material.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/rt/material.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/material.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/rt/material.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/object.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o: /home/cg/cgue2/cglib/src/rt/object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o -c /home/cg/cgue2/cglib/src/rt/object.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/object.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/rt/object.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/object.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/rt/object.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/raytracing_context.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/raytracing_context.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o: /home/cg/cgue2/cglib/src/rt/raytracing_context.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o -c /home/cg/cgue2/cglib/src/rt/raytracing_context.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/raytracing_context.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/rt/raytracing_context.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/raytracing_context.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/rt/raytracing_context.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/raytracing_parameters.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/raytracing_parameters.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o: /home/cg/cgue2/cglib/src/rt/raytracing_parameters.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o -c /home/cg/cgue2/cglib/src/rt/raytracing_parameters.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/raytracing_parameters.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/rt/raytracing_parameters.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/raytracing_parameters.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/rt/raytracing_parameters.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/renderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/renderer.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o: /home/cg/cgue2/cglib/src/rt/renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o -c /home/cg/cgue2/cglib/src/rt/renderer.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/renderer.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/rt/renderer.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/renderer.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/rt/renderer.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o
 
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/scene.cpp
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/flags.make
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o: /home/cg/cgue2/cglib/src/rt/scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o"
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o -c /home/cg/cgue2/cglib/src/rt/scene.cpp
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.i: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.i"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/scene.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.i
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cg/cgue2/cglib/src/rt/scene.cpp > CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.i
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.s: cmake_force
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.s"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/src/rt/scene.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.s
+	cd /home/cg/cgue2/cglib/build/cglib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cg/cgue2/cglib/src/rt/scene.cpp -o CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.s
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.requires:
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.requires:
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.provides: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.requires
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.provides.build
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.provides
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.provides: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.requires
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.provides.build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.provides
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.provides.build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.provides.build: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o
 
 
 # Object files for target cglib_cg_2
@@ -413,53 +413,53 @@ cglib_cg_2_OBJECTS = \
 # External object files for target cglib_cg_2
 cglib_cg_2_EXTERNAL_OBJECTS =
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library libcglib_cg_2.a"
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && $(CMAKE_COMMAND) -P CMakeFiles/cglib_cg_2.dir/cmake_clean_target.cmake
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cglib_cg_2.dir/link.txt --verbose=$(VERBOSE)
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make
+/home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cg/cgue2/02_whitted/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library libcglib_cg_2.a"
+	cd /home/cg/cgue2/cglib/build/cglib && $(CMAKE_COMMAND) -P CMakeFiles/cglib_cg_2.dir/cmake_clean_target.cmake
+	cd /home/cg/cgue2/cglib/build/cglib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cglib_cg_2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/libcglib_cg_2.a
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build: /home/cg/cgue2/cglib/build/cglib/libcglib_cg_2.a
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.requires
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/camera.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/gui.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/image.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/parameters.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/stb_image.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/thread_pool.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/core/timer.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/host_render.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/material.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/object.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_context.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/raytracing_parameters.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/renderer.cpp.o.requires
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires: /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/src/rt/scene.cpp.o.requires
 
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/requires
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/clean:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib && $(CMAKE_COMMAND) -P CMakeFiles/cglib_cg_2.dir/cmake_clean.cmake
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/clean
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/clean:
+	cd /home/cg/cgue2/cglib/build/cglib && $(CMAKE_COMMAND) -P CMakeFiles/cglib_cg_2.dir/cmake_clean.cmake
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/clean
 
-/home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/depend:
-	cd /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted /home/stud/s_pohland/Downloads/cg_exercise_02/cglib /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/depend
+/home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/depend:
+	cd /home/cg/cgue2/02_whitted/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cg/cgue2/02_whitted /home/cg/cgue2/cglib /home/cg/cgue2/02_whitted/build /home/cg/cgue2/cglib/build/cglib /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/depend
 

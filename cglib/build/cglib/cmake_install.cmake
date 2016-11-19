@@ -1,4 +1,4 @@
-# Install script for directory: /home/stud/s_pohland/Downloads/cg_exercise_02/cglib
+# Install script for directory: /home/cg/cgue2/cglib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

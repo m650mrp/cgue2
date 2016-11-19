@@ -1,4 +1,4 @@
-# Install script for directory: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/src
+# Install script for directory: /home/cg/cgue2/02_whitted/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

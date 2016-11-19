@@ -1,6 +1,6 @@
-The system is: Linux - 4.7.9-200.aufs4.ATIS.fc24.x86_64 - x86_64
+The system is: Linux - 4.8.2-1-ARCH - i686
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/lib64/ccache/cc 
+Compiler: /usr/bin/cc 
 Build flags: 
 Id flags: 
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/3.6.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/cg/cgue2/02_whitted/build/CMakeFiles/3.6.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/lib64/ccache/c++ 
+Compiler: /usr/bin/c++ 
 Build flags: 
 Id flags: 
 
@@ -23,101 +23,97 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/3.6.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/cg/cgue2/02_whitted/build/CMakeFiles/3.6.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_da562/fast"
-/bin/gmake -f CMakeFiles/cmTC_da562.dir/build.make CMakeFiles/cmTC_da562.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_da562.dir/testCCompiler.c.o
-/usr/lib64/ccache/cc     -o CMakeFiles/cmTC_da562.dir/testCCompiler.c.o   -c /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_da562
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da562.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc       CMakeFiles/cmTC_da562.dir/testCCompiler.c.o  -o cmTC_da562 -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_c629d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c629d.dir/build.make CMakeFiles/cmTC_c629d.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c629d.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_c629d.dir/testCCompiler.c.o   -c /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_c629d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c629d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_c629d.dir/testCCompiler.c.o  -o cmTC_c629d -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_697c9/fast"
-/bin/gmake -f CMakeFiles/cmTC_697c9.dir/build.make CMakeFiles/cmTC_697c9.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_697c9.dir/CMakeCCompilerABI.c.o
-/usr/lib64/ccache/cc     -o CMakeFiles/cmTC_697c9.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_697c9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_697c9.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc      -v CMakeFiles/cmTC_697c9.dir/CMakeCCompilerABI.c.o  -o cmTC_697c9 -rdynamic  
-Es werden eingebaute Spezifikationen verwendet.
-COLLECT_GCC=/bin/cc
-COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/lto-wrapper
-Ziel: x86_64-redhat-linux
-Konfiguriert mit: ../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --disable-libgcj --with-isl --enable-libmpx --enable-gnu-indirect-function --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
-Thread-Modell: posix
-gcc-Version 6.2.1 20160916 (Red Hat 6.2.1-2) (GCC) 
-COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/:/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/:/usr/lib/gcc/x86_64-redhat-linux/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/6.2.1/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_697c9' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/6.2.1/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/6.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4Cd9e8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_697c9 /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1 -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../.. CMakeFiles/cmTC_697c9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtend.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_697c9' '-rdynamic' '-mtune=generic' '-march=x86-64'
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_dae74/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dae74.dir/build.make CMakeFiles/cmTC_dae74.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dae74.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_dae74.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.6/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_dae74
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dae74.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_dae74.dir/CMakeCCompilerABI.c.o  -o cmTC_dae74 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/lto-wrapper
+Target: i686-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release
+Thread model: posix
+gcc version 6.2.1 20160830 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dae74' '-rdynamic' '-mtune=generic' '-march=pentiumpro'
+ /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/collect2 -plugin /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAipKlH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_dae74 /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crt1.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crti.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtbegin.o -L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1 -L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../.. CMakeFiles/cmTC_dae74.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtend.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dae74' '-rdynamic' '-mtune=generic' '-march=pentiumpro'
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/bin/gmake" "cmTC_697c9/fast"]
-  ignore line: [/bin/gmake -f CMakeFiles/cmTC_697c9.dir/build.make CMakeFiles/cmTC_697c9.dir/build]
-  ignore line: [gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten]
-  ignore line: [Building C object CMakeFiles/cmTC_697c9.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/lib64/ccache/cc     -o CMakeFiles/cmTC_697c9.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_697c9]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_697c9.dir/link.txt --verbose=1]
-  ignore line: [/usr/lib64/ccache/cc      -v CMakeFiles/cmTC_697c9.dir/CMakeCCompilerABI.c.o  -o cmTC_697c9 -rdynamic  ]
-  ignore line: [Es werden eingebaute Spezifikationen verwendet.]
-  ignore line: [COLLECT_GCC=/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/lto-wrapper]
-  ignore line: [Ziel: x86_64-redhat-linux]
-  ignore line: [Konfiguriert mit: ../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --disable-libgcj --with-isl --enable-libmpx --enable-gnu-indirect-function --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
-  ignore line: [Thread-Modell: posix]
-  ignore line: [gcc-Version 6.2.1 20160916 (Red Hat 6.2.1-2) (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/:/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/:/usr/lib/gcc/x86_64-redhat-linux/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/6.2.1/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_697c9' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/6.2.1/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/6.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4Cd9e8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_697c9 /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1 -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../.. CMakeFiles/cmTC_697c9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtend.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crtn.o]
-    arg [/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/collect2] ==> ignore
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_dae74/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_dae74.dir/build.make CMakeFiles/cmTC_dae74.dir/build]
+  ignore line: [make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_dae74.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_dae74.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.6/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_dae74]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dae74.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_dae74.dir/CMakeCCompilerABI.c.o  -o cmTC_dae74 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/lto-wrapper]
+  ignore line: [Target: i686-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.2.1 20160830 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dae74' '-rdynamic' '-mtune=generic' '-march=pentiumpro']
+  link line: [ /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/collect2 -plugin /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAipKlH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_dae74 /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crt1.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crti.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtbegin.o -L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1 -L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../.. CMakeFiles/cmTC_dae74.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtend.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crtn.o]
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc4Cd9e8.res] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccAipKlH.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [--build-id] ==> ignore
-    arg [--no-add-needed] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
+    arg [elf_i386] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [/lib/ld-linux.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_697c9] ==> ignore
-    arg [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-redhat-linux/6.2.1] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1]
-    arg [-L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64]
-    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
-    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-    arg [-L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../..]
-    arg [CMakeFiles/cmTC_697c9.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTC_dae74] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crt1.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crti.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1] ==> dir [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1]
+    arg [-L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../..] ==> dir [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../..]
+    arg [CMakeFiles/cmTC_dae74.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -127,36 +123,33 @@ Parsed C implicit link information from above output:
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crtn.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crtn.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
-  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1] ==> [/usr/lib/gcc/x86_64-redhat-linux/6.2.1]
-  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64] ==> [/usr/lib64]
-  collapse library dir [/lib/../lib64] ==> [/lib64]
-  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1] ==> [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1]
+  collapse library dir [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../..] ==> [/usr/lib]
   implicit libs: [c]
-  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/6.2.1;/usr/lib64;/lib64;/usr/lib]
+  implicit dirs: [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1;/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_ca4e0/fast"
-/bin/gmake -f CMakeFiles/cmTC_ca4e0.dir/build.make CMakeFiles/cmTC_ca4e0.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_ca4e0.dir/feature_tests.c.o
-/usr/lib64/ccache/cc    -std=c11 -o CMakeFiles/cmTC_ca4e0.dir/feature_tests.c.o   -c /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_ca4e0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca4e0.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc       CMakeFiles/cmTC_ca4e0.dir/feature_tests.c.o  -o cmTC_ca4e0 -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_76f1b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_76f1b.dir/build.make CMakeFiles/cmTC_76f1b.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76f1b.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_76f1b.dir/feature_tests.c.o   -c /home/cg/cgue2/02_whitted/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_76f1b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76f1b.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_76f1b.dir/feature_tests.c.o  -o cmTC_76f1b -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -166,17 +159,17 @@ gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitte
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_7c3ba/fast"
-/bin/gmake -f CMakeFiles/cmTC_7c3ba.dir/build.make CMakeFiles/cmTC_7c3ba.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_7c3ba.dir/feature_tests.c.o
-/usr/lib64/ccache/cc    -std=c99 -o CMakeFiles/cmTC_7c3ba.dir/feature_tests.c.o   -c /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_7c3ba
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c3ba.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc       CMakeFiles/cmTC_7c3ba.dir/feature_tests.c.o  -o cmTC_7c3ba -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_6296c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6296c.dir/build.make CMakeFiles/cmTC_6296c.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6296c.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_6296c.dir/feature_tests.c.o   -c /home/cg/cgue2/02_whitted/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_6296c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6296c.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_6296c.dir/feature_tests.c.o  -o cmTC_6296c -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -186,17 +179,17 @@ gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitte
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_c74ef/fast"
-/bin/gmake -f CMakeFiles/cmTC_c74ef.dir/build.make CMakeFiles/cmTC_c74ef.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_c74ef.dir/feature_tests.c.o
-/usr/lib64/ccache/cc    -std=c90 -o CMakeFiles/cmTC_c74ef.dir/feature_tests.c.o   -c /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c74ef
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c74ef.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc       CMakeFiles/cmTC_c74ef.dir/feature_tests.c.o  -o cmTC_c74ef -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_f512f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f512f.dir/build.make CMakeFiles/cmTC_f512f.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f512f.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_f512f.dir/feature_tests.c.o   -c /home/cg/cgue2/02_whitted/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_f512f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f512f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_f512f.dir/feature_tests.c.o  -o cmTC_f512f -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -204,98 +197,94 @@ gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitte
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_2f82f/fast"
-/bin/gmake -f CMakeFiles/cmTC_2f82f.dir/build.make CMakeFiles/cmTC_2f82f.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building CXX object CMakeFiles/cmTC_2f82f.dir/testCXXCompiler.cxx.o
-/usr/lib64/ccache/c++      -o CMakeFiles/cmTC_2f82f.dir/testCXXCompiler.cxx.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_2f82f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f82f.dir/link.txt --verbose=1
-/usr/lib64/ccache/c++        CMakeFiles/cmTC_2f82f.dir/testCXXCompiler.cxx.o  -o cmTC_2f82f -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_f2b81/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f2b81.dir/build.make CMakeFiles/cmTC_f2b81.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f2b81.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_f2b81.dir/testCXXCompiler.cxx.o -c /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_f2b81
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2b81.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_f2b81.dir/testCXXCompiler.cxx.o  -o cmTC_f2b81 -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_be069/fast"
-/bin/gmake -f CMakeFiles/cmTC_be069.dir/build.make CMakeFiles/cmTC_be069.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building CXX object CMakeFiles/cmTC_be069.dir/CMakeCXXCompilerABI.cpp.o
-/usr/lib64/ccache/c++      -o CMakeFiles/cmTC_be069.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_be069
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be069.dir/link.txt --verbose=1
-/usr/lib64/ccache/c++       -v CMakeFiles/cmTC_be069.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_be069 -rdynamic  
-Es werden eingebaute Spezifikationen verwendet.
-COLLECT_GCC=/bin/c++
-COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/lto-wrapper
-Ziel: x86_64-redhat-linux
-Konfiguriert mit: ../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --disable-libgcj --with-isl --enable-libmpx --enable-gnu-indirect-function --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
-Thread-Modell: posix
-gcc-Version 6.2.1 20160916 (Red Hat 6.2.1-2) (GCC) 
-COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/:/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/:/usr/lib/gcc/x86_64-redhat-linux/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/6.2.1/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be069' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/6.2.1/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/6.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNy4qQp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_be069 /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1 -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../.. CMakeFiles/cmTC_be069.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtend.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be069' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_2bb30/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2bb30.dir/build.make CMakeFiles/cmTC_2bb30.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2bb30.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_2bb30.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_2bb30
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bb30.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_2bb30.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2bb30 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/lto-wrapper
+Target: i686-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release
+Thread model: posix
+gcc version 6.2.1 20160830 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2bb30' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro'
+ /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/collect2 -plugin /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBFqV6Y.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_2bb30 /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crt1.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crti.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtbegin.o -L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1 -L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../.. CMakeFiles/cmTC_2bb30.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtend.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2bb30' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro'
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/bin/gmake" "cmTC_be069/fast"]
-  ignore line: [/bin/gmake -f CMakeFiles/cmTC_be069.dir/build.make CMakeFiles/cmTC_be069.dir/build]
-  ignore line: [gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten]
-  ignore line: [Building CXX object CMakeFiles/cmTC_be069.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/lib64/ccache/c++      -o CMakeFiles/cmTC_be069.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_be069]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be069.dir/link.txt --verbose=1]
-  ignore line: [/usr/lib64/ccache/c++       -v CMakeFiles/cmTC_be069.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_be069 -rdynamic  ]
-  ignore line: [Es werden eingebaute Spezifikationen verwendet.]
-  ignore line: [COLLECT_GCC=/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/lto-wrapper]
-  ignore line: [Ziel: x86_64-redhat-linux]
-  ignore line: [Konfiguriert mit: ../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --disable-libgcj --with-isl --enable-libmpx --enable-gnu-indirect-function --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
-  ignore line: [Thread-Modell: posix]
-  ignore line: [gcc-Version 6.2.1 20160916 (Red Hat 6.2.1-2) (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/:/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/:/usr/lib/gcc/x86_64-redhat-linux/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/6.2.1/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be069' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/6.2.1/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/6.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNy4qQp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_be069 /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1 -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../.. CMakeFiles/cmTC_be069.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtend.o /usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crtn.o]
-    arg [/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/collect2] ==> ignore
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_2bb30/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_2bb30.dir/build.make CMakeFiles/cmTC_2bb30.dir/build]
+  ignore line: [make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_2bb30.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_2bb30.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_2bb30]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bb30.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_2bb30.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2bb30 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/lto-wrapper]
+  ignore line: [Target: i686-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.2.1 20160830 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/:/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2bb30' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro']
+  link line: [ /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/collect2 -plugin /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBFqV6Y.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_2bb30 /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crt1.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crti.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtbegin.o -L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1 -L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../.. CMakeFiles/cmTC_2bb30.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtend.o /usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crtn.o]
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccNy4qQp.res] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccBFqV6Y.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [--build-id] ==> ignore
-    arg [--no-add-needed] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
+    arg [elf_i386] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [/lib/ld-linux.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_be069] ==> ignore
-    arg [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-redhat-linux/6.2.1] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1]
-    arg [-L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64]
-    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
-    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-    arg [-L/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../..]
-    arg [CMakeFiles/cmTC_be069.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTC_2bb30] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crt1.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crti.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1] ==> dir [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1]
+    arg [-L/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../..] ==> dir [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../..]
+    arg [CMakeFiles/cmTC_2bb30.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -303,36 +292,33 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/crtn.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../../crtn.o] ==> ignore
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
-  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1] ==> [/usr/lib/gcc/x86_64-redhat-linux/6.2.1]
-  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64] ==> [/usr/lib64]
-  collapse library dir [/lib/../lib64] ==> [/lib64]
-  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1] ==> [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1]
+  collapse library dir [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1/../../..] ==> [/usr/lib]
   implicit libs: [stdc++;m;c]
-  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/6.2.1;/usr/lib64;/lib64;/usr/lib]
+  implicit dirs: [/usr/lib/gcc/i686-pc-linux-gnu/6.2.1;/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_919a0/fast"
-/bin/gmake -f CMakeFiles/cmTC_919a0.dir/build.make CMakeFiles/cmTC_919a0.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building CXX object CMakeFiles/cmTC_919a0.dir/feature_tests.cxx.o
-/usr/lib64/ccache/c++     -std=c++14 -o CMakeFiles/cmTC_919a0.dir/feature_tests.cxx.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_919a0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_919a0.dir/link.txt --verbose=1
-/usr/lib64/ccache/c++        CMakeFiles/cmTC_919a0.dir/feature_tests.cxx.o  -o cmTC_919a0 -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_47b1f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_47b1f.dir/build.make CMakeFiles/cmTC_47b1f.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_47b1f.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_47b1f.dir/feature_tests.cxx.o -c /home/cg/cgue2/02_whitted/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_47b1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47b1f.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_47b1f.dir/feature_tests.cxx.o  -o cmTC_47b1f -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -395,17 +381,17 @@ gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitte
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_b36d1/fast"
-/bin/gmake -f CMakeFiles/cmTC_b36d1.dir/build.make CMakeFiles/cmTC_b36d1.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building CXX object CMakeFiles/cmTC_b36d1.dir/feature_tests.cxx.o
-/usr/lib64/ccache/c++     -std=c++11 -o CMakeFiles/cmTC_b36d1.dir/feature_tests.cxx.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_b36d1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b36d1.dir/link.txt --verbose=1
-/usr/lib64/ccache/c++        CMakeFiles/cmTC_b36d1.dir/feature_tests.cxx.o  -o cmTC_b36d1 -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_e60b9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e60b9.dir/build.make CMakeFiles/cmTC_e60b9.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e60b9.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_e60b9.dir/feature_tests.cxx.o -c /home/cg/cgue2/02_whitted/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_e60b9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e60b9.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_e60b9.dir/feature_tests.cxx.o  -o cmTC_e60b9 -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -468,17 +454,17 @@ gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitte
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_27b66/fast"
-/bin/gmake -f CMakeFiles/cmTC_27b66.dir/build.make CMakeFiles/cmTC_27b66.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building CXX object CMakeFiles/cmTC_27b66.dir/feature_tests.cxx.o
-/usr/lib64/ccache/c++     -std=c++98 -o CMakeFiles/cmTC_27b66.dir/feature_tests.cxx.o -c /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_27b66
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27b66.dir/link.txt --verbose=1
-/usr/lib64/ccache/c++        CMakeFiles/cmTC_27b66.dir/feature_tests.cxx.o  -o cmTC_27b66 -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_fa1f1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fa1f1.dir/build.make CMakeFiles/cmTC_fa1f1.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fa1f1.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_fa1f1.dir/feature_tests.cxx.o -c /home/cg/cgue2/02_whitted/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_fa1f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa1f1.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_fa1f1.dir/feature_tests.cxx.o  -o cmTC_fa1f1 -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -539,142 +525,142 @@ gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitte
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_47b48/fast"
-/bin/gmake -f CMakeFiles/cmTC_47b48.dir/build.make CMakeFiles/cmTC_47b48.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_47b48.dir/CheckIncludeFile.c.o
-/usr/lib64/ccache/cc     -o CMakeFiles/cmTC_47b48.dir/CheckIncludeFile.c.o   -c /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_47b48
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47b48.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc       CMakeFiles/cmTC_47b48.dir/CheckIncludeFile.c.o  -o cmTC_47b48 -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_fa273/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fa273.dir/build.make CMakeFiles/cmTC_fa273.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa273.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_fa273.dir/CheckIncludeFile.c.o   -c /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fa273
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa273.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_fa273.dir/CheckIncludeFile.c.o  -o cmTC_fa273 -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_9c3fe/fast"
-/bin/gmake -f CMakeFiles/cmTC_9c3fe.dir/build.make CMakeFiles/cmTC_9c3fe.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_9c3fe.dir/CheckFunctionExists.c.o
-/usr/lib64/ccache/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9c3fe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_9c3fe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c3fe.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_9c3fe.dir/CheckFunctionExists.c.o  -o cmTC_9c3fe -rdynamic -lpthread 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_1fb92/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1fb92.dir/build.make CMakeFiles/cmTC_1fb92.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1fb92.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1fb92.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1fb92
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fb92.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_1fb92.dir/CheckFunctionExists.c.o  -o cmTC_1fb92 -rdynamic -lpthread 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
-Determining if the function XOpenDisplay exists in the /usr/lib64/libX11.so;/usr/lib64/libXext.so passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Determining if the function XOpenDisplay exists in the /usr/lib/libX11.so;/usr/lib/libXext.so passed with the following output:
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_37e4f/fast"
-/bin/gmake -f CMakeFiles/cmTC_37e4f.dir/build.make CMakeFiles/cmTC_37e4f.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_37e4f.dir/CheckFunctionExists.c.o
-/usr/lib64/ccache/cc    -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_37e4f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_37e4f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37e4f.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTC_37e4f.dir/CheckFunctionExists.c.o  -o cmTC_37e4f -rdynamic /usr/lib64/libX11.so /usr/lib64/libXext.so 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_58583/fast"
+/usr/bin/make -f CMakeFiles/cmTC_58583.dir/build.make CMakeFiles/cmTC_58583.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58583.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_58583.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_58583
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58583.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTC_58583.dir/CheckFunctionExists.c.o  -o cmTC_58583 -rdynamic /usr/lib/libX11.so /usr/lib/libXext.so 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function gethostbyname exists passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_c25ed/fast"
-/bin/gmake -f CMakeFiles/cmTC_c25ed.dir/build.make CMakeFiles/cmTC_c25ed.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_c25ed.dir/CheckFunctionExists.c.o
-/usr/lib64/ccache/cc    -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_c25ed.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_c25ed
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c25ed.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_c25ed.dir/CheckFunctionExists.c.o  -o cmTC_c25ed -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_0f108/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0f108.dir/build.make CMakeFiles/cmTC_0f108.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0f108.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_0f108.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0f108
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f108.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_0f108.dir/CheckFunctionExists.c.o  -o cmTC_0f108 -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function connect exists passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_d839b/fast"
-/bin/gmake -f CMakeFiles/cmTC_d839b.dir/build.make CMakeFiles/cmTC_d839b.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_d839b.dir/CheckFunctionExists.c.o
-/usr/lib64/ccache/cc    -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_d839b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d839b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d839b.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_d839b.dir/CheckFunctionExists.c.o  -o cmTC_d839b -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_abbc8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_abbc8.dir/build.make CMakeFiles/cmTC_abbc8.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_abbc8.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_abbc8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_abbc8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abbc8.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_abbc8.dir/CheckFunctionExists.c.o  -o cmTC_abbc8 -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function remove exists passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_9139d/fast"
-/bin/gmake -f CMakeFiles/cmTC_9139d.dir/build.make CMakeFiles/cmTC_9139d.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_9139d.dir/CheckFunctionExists.c.o
-/usr/lib64/ccache/cc    -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_9139d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_9139d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9139d.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTC_9139d.dir/CheckFunctionExists.c.o  -o cmTC_9139d -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_4c193/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4c193.dir/build.make CMakeFiles/cmTC_4c193.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4c193.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_4c193.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4c193
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c193.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTC_4c193.dir/CheckFunctionExists.c.o  -o cmTC_4c193 -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function shmat exists passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_25c76/fast"
-/bin/gmake -f CMakeFiles/cmTC_25c76.dir/build.make CMakeFiles/cmTC_25c76.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_25c76.dir/CheckFunctionExists.c.o
-/usr/lib64/ccache/cc    -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_25c76.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_25c76
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25c76.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTC_25c76.dir/CheckFunctionExists.c.o  -o cmTC_25c76 -rdynamic 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_94c68/fast"
+/usr/bin/make -f CMakeFiles/cmTC_94c68.dir/build.make CMakeFiles/cmTC_94c68.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94c68.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_94c68.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_94c68
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94c68.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTC_94c68.dir/CheckFunctionExists.c.o  -o cmTC_94c68 -rdynamic 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_528b0/fast"
-/bin/gmake -f CMakeFiles/cmTC_528b0.dir/build.make CMakeFiles/cmTC_528b0.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_528b0.dir/CheckFunctionExists.c.o
-/usr/lib64/ccache/cc    -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_528b0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_528b0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_528b0.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTC_528b0.dir/CheckFunctionExists.c.o  -o cmTC_528b0 -rdynamic -lICE 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_f6604/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f6604.dir/build.make CMakeFiles/cmTC_f6604.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f6604.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_f6604.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f6604
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6604.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTC_f6604.dir/CheckFunctionExists.c.o  -o cmTC_f6604 -rdynamic -lICE 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function glXGetProcAddress exists passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_46c0f/fast"
-/bin/gmake -f CMakeFiles/cmTC_46c0f.dir/build.make CMakeFiles/cmTC_46c0f.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_46c0f.dir/CheckFunctionExists.c.o
-/usr/lib64/ccache/cc    -DCHECK_FUNCTION_EXISTS=glXGetProcAddress   -o CMakeFiles/cmTC_46c0f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_46c0f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46c0f.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddress    CMakeFiles/cmTC_46c0f.dir/CheckFunctionExists.c.o  -o cmTC_46c0f -rdynamic /usr/lib64/libGL.so 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_6a6cf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6a6cf.dir/build.make CMakeFiles/cmTC_6a6cf.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a6cf.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=glXGetProcAddress   -o CMakeFiles/cmTC_6a6cf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6a6cf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a6cf.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddress    CMakeFiles/cmTC_6a6cf.dir/CheckFunctionExists.c.o  -o cmTC_6a6cf -rdynamic /usr/lib/libGL.so 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function glXGetProcAddressARB exists passed with the following output:
-Change Dir: /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/bin/gmake" "cmTC_05f41/fast"
-/bin/gmake -f CMakeFiles/cmTC_05f41.dir/build.make CMakeFiles/cmTC_05f41.dir/build
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_05f41.dir/CheckFunctionExists.c.o
-/usr/lib64/ccache/cc    -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB   -o CMakeFiles/cmTC_05f41.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_05f41
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05f41.dir/link.txt --verbose=1
-/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB    CMakeFiles/cmTC_05f41.dir/CheckFunctionExists.c.o  -o cmTC_05f41 -rdynamic /usr/lib64/libGL.so 
-gmake[1]: Verzeichnis „/home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_ef904/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ef904.dir/build.make CMakeFiles/cmTC_ef904.dir/build
+make[1]: Entering directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef904.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB   -o CMakeFiles/cmTC_ef904.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ef904
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef904.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB    CMakeFiles/cmTC_ef904.dir/CheckFunctionExists.c.o  -o cmTC_ef904 -rdynamic /usr/lib/libGL.so 
+make[1]: Leaving directory '/home/cg/cgue2/02_whitted/build/CMakeFiles/CMakeTmp'
 
 

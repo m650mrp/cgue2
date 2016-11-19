@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted
+CMAKE_SOURCE_DIR = /home/cg/cgue2/02_whitted
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build
+CMAKE_BINARY_DIR = /home/cg/cgue2/02_whitted/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,11 +78,77 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/cg/cgue2/02_whitted/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+
+.PHONY : package/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"mx\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cg/cgue2/02_whitted/build/CMakeFiles /home/cg/cgue2/02_whitted/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stud/s_pohland/Downloads/cg_exercise_02/02_whitted/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cg/cgue2/02_whitted/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -146,8 +212,60 @@ glfw: cmake_check_build_system
 
 # fast build rule for target.
 glfw/fast:
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/glfw/src/CMakeFiles/glfw.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/glfw/src/CMakeFiles/glfw.dir/build
+	$(MAKE) -f /home/cg/cgue2/cglib/build/glfw/src/CMakeFiles/glfw.dir/build.make /home/cg/cgue2/cglib/build/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named glew32mx
+
+# Build rule for target.
+glew32mx: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 glew32mx
+.PHONY : glew32mx
+
+# fast build rule for target.
+glew32mx/fast:
+	$(MAKE) -f /home/cg/cgue2/cglib/build/glew/CMakeFiles/glew32mx.dir/build.make /home/cg/cgue2/cglib/build/glew/CMakeFiles/glew32mx.dir/build
+.PHONY : glew32mx/fast
+
+#=============================================================================
+# Target rules for targets named glew32mxs
+
+# Build rule for target.
+glew32mxs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 glew32mxs
+.PHONY : glew32mxs
+
+# fast build rule for target.
+glew32mxs/fast:
+	$(MAKE) -f /home/cg/cgue2/cglib/build/glew/CMakeFiles/glew32mxs.dir/build.make /home/cg/cgue2/cglib/build/glew/CMakeFiles/glew32mxs.dir/build
+.PHONY : glew32mxs/fast
+
+#=============================================================================
+# Target rules for targets named glew32s
+
+# Build rule for target.
+glew32s: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 glew32s
+.PHONY : glew32s
+
+# fast build rule for target.
+glew32s/fast:
+	$(MAKE) -f /home/cg/cgue2/cglib/build/glew/CMakeFiles/glew32s.dir/build.make /home/cg/cgue2/cglib/build/glew/CMakeFiles/glew32s.dir/build
+.PHONY : glew32s/fast
+
+#=============================================================================
+# Target rules for targets named glew32
+
+# Build rule for target.
+glew32: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 glew32
+.PHONY : glew32
+
+# fast build rule for target.
+glew32/fast:
+	$(MAKE) -f /home/cg/cgue2/cglib/build/glew/CMakeFiles/glew32.dir/build.make /home/cg/cgue2/cglib/build/glew/CMakeFiles/glew32.dir/build
+.PHONY : glew32/fast
 
 #=============================================================================
 # Target rules for targets named cglib_cg_2
@@ -159,7 +277,7 @@ cglib_cg_2: cmake_check_build_system
 
 # fast build rule for target.
 cglib_cg_2/fast:
-	$(MAKE) -f /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/stud/s_pohland/Downloads/cg_exercise_02/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build
+	$(MAKE) -f /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build.make /home/cg/cgue2/cglib/build/cglib/CMakeFiles/cglib_cg_2.dir/build
 .PHONY : cglib_cg_2/fast
 
 #=============================================================================
@@ -183,9 +301,19 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... install/strip"
+	@echo "... package_source"
+	@echo "... package"
+	@echo "... list_install_components"
 	@echo "... clean"
 	@echo "... AntTweakBar_make"
+	@echo "... install/local"
+	@echo "... install"
 	@echo "... glfw"
+	@echo "... glew32mx"
+	@echo "... glew32mxs"
+	@echo "... glew32s"
+	@echo "... glew32"
 	@echo "... cglib_cg_2"
 	@echo "... cg"
 .PHONY : help
